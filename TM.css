@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* Login Section Background */
+#authSection {
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3c11a4e-961b-47ec-8f72-acebce4c4562/dgd7ll1-ddf39746-ca33-4496-9091-188ab2b79853.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzYzExYTRlLTk2MWItNDdlYy04ZjcyLWFjZWJjZTRjNDU2MlwvZGdkN2xsMS1kZGYzOTc0Ni1jYTMzLTQ0OTYtOTA5MS0xODhhYjJiNzk4NTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7TzuK1FcNTBrcwPssWy7-BPsSJj9HPdBEV__tMbmg-E') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Dashboard Background */
+#dashboard {
+    background: url('https://cdn.dribbble.com/users/1583884/screenshots/17992419/media/8cca2744071aadc42d8ad7a5a37afdc3.jpg?resize=400x0') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Animation for Cards and Transition Effects */
+.animated {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Style for task items */
+#tasks li {
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Additional Styling */
+h2 {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Profile and Settings Page Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Customize Links for Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+body.dark-theme {
+    background-color: #343a40; /* Dark background */
+    color: white; /* Light text */
+}
