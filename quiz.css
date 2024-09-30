@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/free-psd/3d-rendering-questions-background_23-2151455632.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Vertical Navbar */
+.vertical-nav {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 20px;
+}
+
+.vertical-nav .nav-link {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.vertical-nav .nav-link:hover {
+    background-color: #17a2b8;
+    border-radius: 10px;
+}
+
+/* Main Content Area */
+#main-content {
+    margin-left: 220px; /* Adjust margin to avoid navbar */
+    padding: 20px;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Animations */
+.animated-title {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.start-quiz-btn {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Leaderboard List */
+#leaderboard {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#leaderboard li {
+    padding: 10px;
+    background-color: rgba(52, 58, 64, 0.8);
+    color: #fff;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Custom Button Styling */
+button {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Animation for the form */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hidden {
+    display: none;
+}

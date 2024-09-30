@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contestant Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        h2 {
+            text-align: center;
+            color: #343a40;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Contestant Details</h2>
+        <form id="contestantDetails">
+            <div class="form-group">
+                <label for="contestantName">Name:</label>
+                <input type="text" id="contestantName" required class="form-control" placeholder="Enter contestant's name">
+            </div>
+            <div class="form-group">
+                <label for="contestantEmail">Email:</label>
+                <input type="email" id="contestantEmail" required class="form-control" placeholder="Enter contestant's email">
+            </div>
+            <div class="form-group">
+                <label for="quizSelection">Select Quiz:</label>
+                <select id="quizSelection" required class="form-control">
+                    <option value="">Select a quiz</option>
+                    <option value="JavaScript Basics">JavaScript Basics</option>
+                    <option value="HTML & CSS">HTML & CSS</option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Submit Contestant</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contestantDetails').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('contestantName').value;
+            const email = document.getElementById('contestantEmail').value;
+            const quiz = document.getElementById('quizSelection').value;
+            alert(`Contestant Details:\nName: ${name}\nEmail: ${email}\nSelected Quiz: ${quiz}`);
+        });
+    </script>
+</body>
+</html>
